@@ -41,3 +41,19 @@ console.log(arraySquadNew);
 
 
 // SNACK 3
+const arrayNum = [31, 44, 21, 45, 53, 124, 21, 51, 87, 59, 93, 85];
+
+function inclusiva (arrayNum, min, max) {
+    const newArrayNum = [];
+    for (let i = 0; i < arrayNum.length; i++) {
+        if (i >= min && i <= max) {
+            newArrayNum.push(arrayNum[i]);
+        }
+    }
+    return newArrayNum;    
+}
+
+console.log(inclusiva(arrayNum, 2, 8));
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
