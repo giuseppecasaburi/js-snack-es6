@@ -33,10 +33,14 @@ console.log(arraySquad);
 // CICLO CHE CREA UN NUOVO ARRAY E INSERISCE AL SUO INTERNO SOLAMENTE IL NOME DELLA SQUADRA E I FALLI SUBITI
 const arraySquadNew = [];
 for (let i = 0; i < arraySquad.length; i++) {
-    arraySquadNew.push(arraySquad[i].nome);
-    arraySquadNew.push(arraySquad[i].falliSubiti);
+    const curTeam = arraySquad[i];
+    const team = {
+        nome: curTeam.nome,
+        falliSubiti: curTeam.falliSubiti
+    };
+    arraySquadNew.push(team);
 }
-console.log(arraySquadNew);
+console.log(arraySquadNew); 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
